@@ -1,0 +1,101 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="clientapp\my-app\src\api\scrum-poker-api.ts" />
+    <None Remove="clientapp\my-app\src\App.tsx" />
+    <None Remove="clientapp\my-app\src\components\admin\SprintDetail.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\Board.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\CardList.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\card\Card.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\ScoreChart.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\ScoreList.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\UserList.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\user\CreateUser.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\user\User.tsx" />
+    <None Remove="clientapp\my-app\src\components\board\user\UserDetail.tsx" />
+    <None Remove="clientapp\my-app\src\components\components\Copy.tsx" />
+    <None Remove="clientapp\my-app\src\components\components\CopyText.ts" />
+    <None Remove="clientapp\my-app\src\components\components\Delete.tsx" />
+    <None Remove="clientapp\my-app\src\components\components\Header.tsx" />
+    <None Remove="clientapp\my-app\src\components\components\Planningpoker.tsx" />
+    <None Remove="clientapp\my-app\src\components\components\Share.tsx" />
+    <None Remove="clientapp\my-app\src\index.tsx" />
+    <None Remove="clientapp\my-app\src\models\adminHook.ts" />
+    <None Remove="clientapp\my-app\src\models\board.ts" />
+    <None Remove="clientapp\my-app\src\models\context.ts" />
+    <None Remove="clientapp\my-app\src\models\score.ts" />
+    <None Remove="clientapp\my-app\src\models\user-model.ts" />
+    <None Remove="clientapp\my-app\src\serviceWorker.ts" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <COMReference Include="SystemMonitor">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>7</VersionMinor>
+      <VersionMajor>3</VersionMajor>
+      <Guid>1b773e42-2509-11cf-942f-008029004347</Guid>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="{4fb2d46f-efc8-4643-bcd0-6e5bfa6a174c}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>4fb2d46f-efc8-4643-bcd0-6e5bfa6a174c</Guid>
+    </COMReference>
+    <COMReference Include="{bee4bfec-6683-3e67-9167-3c0cbc68f40a}">
+      <WrapperTool>tlbimp</WrapperTool>
+      <VersionMinor>4</VersionMinor>
+      <VersionMajor>2</VersionMajor>
+      <Guid>bee4bfec-6683-3e67-9167-3c0cbc68f40a</Guid>
+    </COMReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AWSSDK.Lambda" Version="3.7.8.22" />
+    <PackageReference Include="Microsoft.AspNet.Providers.Core" Version="2.0.0" />
+    <PackageReference Include="StackExchange.Redis" Version="2.2.88" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    <PackageReference Include="System.Composition.Runtime" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="clientapp\my-app\public\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="clientapp\my-app\src\api\scrum-poker-api.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\App.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\admin\SprintDetail.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\Board.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\CardList.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\card\Card.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\ScoreChart.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\ScoreList.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\UserList.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\user\CreateUser.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\user\User.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\board\user\UserDetail.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\Copy.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\CopyText.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\Delete.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\Header.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\Planningpoker.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\components\components\Share.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\index.tsx" />
+    <TypeScriptCompile Include="clientapp\my-app\src\models\adminHook.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\models\board.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\models\context.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\models\score.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\models\user-model.ts" />
+    <TypeScriptCompile Include="clientapp\my-app\src\serviceWorker.ts" />
+  </ItemGroup>
+
+</Project>
